@@ -1,0 +1,21 @@
+[decimal]
+api_url = 
+
+#mainnet_url = https://mainnet-explorer-api.decimalchain.com
+#testnet_url = https://testnet-explorer-api.decimalchain.com
+
+[telegram]
+api_url = https://api.telegram.org/bot
+token = 
+channel_id = 
+
+# local test
+#token = 1014802542:AAFILkf9mhbG7-qCWEkqSNlDoGNB_ghdMws
+#channel_id = -1001528390065
+
+# testnet_prod
+#channel_id = -1001533836570
+
+# mainnet_prod
+# token = 1672277692:AAEOHQgQ-95zGtw6jDkVSwYDDQvE6qrEwg8
+# channel_id = -1001294926935

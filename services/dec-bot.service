@@ -1,0 +1,24 @@
+[Unit]
+Description=dec-bot service created for Decimal.
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=3s
+Environment=PYTHONUNBUFFERED=1
+WorkingDirectory=/home/admin/bot/
+ExecStart=/usr/bin/python3 main.py
+User=admin
+Group=admin
+
+PermissionsStartOnly=true
+ExecStartPre=/bin/mkdir -p /var/log/dec-bot
+ExecStartPre=/bin/chown syslog:adm /var/log/dec-bot
+ExecStartPre=/bin/chmod 755 /var/log/dec-bot
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=dec-bot
+
+
+[Install]
+WantedBy=multi-user.target
